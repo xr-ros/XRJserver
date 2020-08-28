@@ -1,0 +1,10 @@
+server working in default setting: 127.0.0.1:11322
+tcp server is running
+please use --start option to start server, or --stop to stop server
+server working in default setting: 127.0.0.1:11322
+Traceback (most recent call last):
+  File "main.py", line 72, in <module>
+    tcp = Tcp_server("0.0.0.0", 11322, Router, urls, thread_num=10)
+  File "/home/xrrobot/Desktop/XiaoR-ROS/xrJserver-b0.0/xrJserver/base_class/tcp_server.py", line 13, in __init__
+    self.__socket.bind((ip, port))
+OSError: [Errno 98] Address already in use

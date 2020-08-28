@@ -1,0 +1,13 @@
+[Unit]
+Description=xrJserver - xr json socket server
+After=network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=forking
+PIDFile=/opt/xrapp/xrjserverb0.0/pid/main.pid
+ExecStart=/usr/bin/xrjserver --start -i 0.0.0.0 -P 11322
+ExecStop=/usr/bin/xrjserver --stop
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
