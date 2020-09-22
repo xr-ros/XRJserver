@@ -30,5 +30,5 @@ class Sc(xr_base):
 
 class Battery(xr_base):
     data = {
-        "remaining_electricity": 0.0,
+        "remaining_electricity": 12.0,
     }
